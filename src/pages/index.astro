@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <section class="section">
+    <div class="container">
+      <h1>Penstock is loaded</h1>
+      <p style="margin-top: var(--content-gap);">
+        If you see padding and readable width, tokens + defaults are working.
+      </p>
+
+      <div class="flex" style="margin-top: var(--container-gap);">
+        <div style="padding: var(--space-m); border: var(--border); border-radius: var(--radius);">
+          Box A
+        </div>
+        <div style="padding: var(--space-m); border: var(--border); border-radius: var(--radius);">
+          Box B
+        </div>
+      </div>
+
+      <p style="margin-top: var(--content-gap);">
+        <a class="link" href="#">Test link focus</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
