@@ -1,0 +1,113 @@
+/* =========================================================
+   TOKENS (Penstock / ACSS-aligned)
+   Everything here is global custom properties on :root
+   ========================================================= */
+
+:root {
+  /* Dark mode baseline (ACSS 4.x direction) */
+  color-scheme: light dark;
+
+  /* -------------------------
+     SPACING SCALE (T-SHIRT)
+     ------------------------- */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-s:   0.75rem;
+  --space-m:   1rem;
+  --space-l:   1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3.1rem;
+
+  /* -------------------------
+     SECTION SPACE (CONTEXTUAL)
+     ------------------------- */
+  --section-space-2xs: var(--space-s);
+  --section-space-xs:  var(--space-m);
+  --section-space-s:   var(--space-l);
+  --section-space-m:   var(--space-xl);
+  --section-space-l:   var(--space-2xl);
+  --section-space-xl:  clamp(3rem, 6vw, 5rem);
+  --section-space-2xl: clamp(4rem, 8vw, 7rem);
+
+  /* -------------------------
+     CONTEXTUAL SPACING (ACSS)
+     These map to the scale.
+     ------------------------- */
+  --container-gap: var(--space-l);
+  --content-gap:   var(--space-m);
+  --grid-gap:      var(--space-l);
+
+  /* -------------------------
+     WIDTH & LAYOUT
+     ------------------------- */
+  --content-width: 72rem;
+  --gutter: clamp(1rem, 5vw, 3rem);
+
+  /* -------------------------
+     TYPOGRAPHY
+     ------------------------- */
+  --heading-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --body-font-family:    system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  --h1: clamp(2rem, 4vw, 3rem);
+  --h2: clamp(1.75rem, 3vw, 2.5rem);
+  --h3: clamp(1.5rem, 2.5vw, 2rem);
+  --h4: 1.25rem;
+  --h5: 1.125rem;
+  --h6: 1rem;
+
+  --text-2xl: 1.5rem;
+  --text-xl:  1.25rem;
+  --text-l:   1.125rem;
+  --text-m:   1rem;
+  --text-s:   0.9375rem;
+  --text-xs:  0.875rem;
+
+  --heading-line-height: 1.15;
+  --heading-font-weight: 650;
+  --heading-letter-spacing: -0.01em;
+
+  /* -------------------------
+     COLORS (ACSS roles + shades)
+     Use OKLCH-friendly values if you want.
+     No transparency token library.
+     ------------------------- */
+  --primary: #2563eb;
+  --secondary: #0ea5e9;
+  --tertiary: #22c55e;
+  --accent: #f59e0b;
+  --base: #0b1220;
+  --neutral: #94a3b8;
+
+  /* Example shade tokens (add only what you use) */
+  --neutral-ultra-light: #f8fafc;
+  --neutral-light: #e2e8f0;
+  --neutral-dark: #1f2937;
+  --neutral-ultra-dark: #0b1220;
+
+  /* -------------------------
+     COLOR ASSIGNMENTS (CONTEXTUAL)
+     Prefer light-dark() for dual mode.
+     ------------------------- */
+  --bg-ultra-light: var(--neutral-ultra-light);
+  --bg-light:       var(--neutral-light);
+  --bg-dark:        var(--neutral-dark);
+  --bg-ultra-dark:  var(--neutral-ultra-dark);
+
+  --text-dark:        #0b1220;
+  --text-dark-muted:  #334155;
+  --text-light:       #f8fafc;
+  --text-light-muted: #cbd5e1;
+
+  --body-bg-color: light-dark(var(--bg-ultra-light), var(--bg-ultra-dark));
+  --body-color:    light-dark(var(--text-dark), var(--text-light));
+
+  /* -------------------------
+     BORDER + RADIUS (ACSS)
+     ------------------------- */
+  --radius: 0.75rem;
+
+  --border: 1px solid color-mix(in oklab, currentColor 20%, transparent);
+  --border-light: 1px solid color-mix(in oklab, var(--text-dark) 12%, transparent);
+  --border-dark:  1px solid color-mix(in oklab, var(--text-light) 18%, transparent);
+}

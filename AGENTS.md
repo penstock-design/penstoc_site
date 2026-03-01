@@ -35,6 +35,7 @@ Before making any changes, agents MUST read:
 2. `/docs/01_PAGE_BUILDING.md`
 3. `/docs/02_PENSTOCK_FRAMEWORK.md`
 4. `/docs/03_BLOG_SYSTEM.md` (when blog work is requested)
+5. `/docs/component-thinking.md`
 
 If there is a conflict between code and docs, **the docs win**.
 If something is unclear, STOP and ask.

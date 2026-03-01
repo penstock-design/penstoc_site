@@ -1,0 +1,41 @@
+/* =========================================================
+   BASE (boring defaults)
+   Element defaults only.
+   ========================================================= */
+
+html {
+  font-family: var(--body-font-family);
+}
+
+body {
+  margin: 0;
+  background: var(--body-bg-color);
+  color: var(--body-color);
+  font-size: var(--text-m);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+:where(img, svg, video) {
+  max-width: 100%;
+  height: auto;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  line-height: var(--heading-line-height);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+h6 { font-size: var(--h6); }
+
+p {
+  margin: 0;
+}
